@@ -1,0 +1,1263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:a="http://langdale.com.au/2005/Message#" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<head>
+<title>Profile Documentation</title>
+<style type="text/css">
+/* typography: fonts */
+body { font-family: arial, sans-serif; }
+
+.name, .type, .cardinality, .superclass, .xsdtype, .namespace { font-family: courier, monospace; }
+
+
+/* typography: emphasis */
+h1 { color: white; background: gray;}
+
+h2, h3 { color: gray; text-decoration: none;}
+
+h2.abstract, h2.enumerated, h2.domain {font-style: italic } 
+
+p.note { background-color: #ddd }
+
+p.declaration { color: gray }
+
+:link { color: purple; }
+
+.xsdtype { color: black; font-weight: bold; }
+
+.namespace { color: black }
+
+.package { font-size: x-large; color: gray }
+
+
+/* borders */
+div.group {
+	border-style: solid;
+	border-color: gray;
+	border-width: 1px;
+	
+}
+
+th, td {
+	border-top-style : solid;
+	border-top-width : 1px;
+	border-color: gray;
+ }
+
+
+/* spacing and alignment */
+body {padding: 5px; }
+
+h1 { padding: 5px;}
+
+div.group {
+	margin-top: 10px;
+	padding: 5px;
+	position: relative;
+}
+th, td {
+	text-align : left;
+	vertical-align : top;
+}
+th, td.type { width: 15em; overflow: visible; }
+
+p.cardinality { width: 4em; }
+
+p.package { position: absolute; right: 10px; top: 0px}				
+</style>
+</head>
+<body>
+<h1>Profile Documentation</h1>
+<p/>
+<p class="declaration">
+					Profile namespace:
+					<span class="namespace">http://ftn.uns.ac.rs/esi/simes/2013/LabsProfile#</span>
+</p>
+<h1>Concrete Classes</h1>
+<div id="BidTimeSeries" class="group">
+<a href="#BidTimeSeries">
+<h2 class="concrete">BidTimeSeries</h2>
+</a>
+<p class="package">MarketManagement</p>
+<p class="comment">The formal specification of specific characteristics related to a bid.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="BidTimeSeries.blockBid">blockBid</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">Indication that  the values in the period are considered as a whole. They cannot be changed or subdivided.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="BidTimeSeries.direction">direction</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The coded identification of the energy flow.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="BidTimeSeries.divisible">divisible</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">boolean</p>
+</td>
+<td>
+<p class="comment">An indication whether or not each element of the bid may be partially accepted or not.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="BidTimeSeries.linkedBidsIdentification">linkedBidsIdentification</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Unique identification associated with all linked bids.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="BidTimeSeries.minimumActivationQuantity">minimumActivationQuantity</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">decimal</p>
+</td>
+<td>
+<p class="comment">The minimum quantity of energy that can be activated at a given time interval.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="BidTimeSeries.stepIncrementQuantity">stepIncrementQuantity</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">decimal</p>
+</td>
+<td>
+<p class="comment">The minimum increment that can be applied for an increase in an activation request.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">objectAggregation</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TimeSeries.objectAggregation">TimeSeries</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">product</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TimeSeries.product">TimeSeries</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">version</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TimeSeries.version">TimeSeries</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">MarketDocument</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#MarketDocument">MarketDocument</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TimeSeries.MarketDocument">TimeSeries</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">Period</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Period">Period</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#TimeSeries.Period">TimeSeries</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="MarketDocument" class="group">
+<a href="#MarketDocument">
+<h2 class="concrete">MarketDocument</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">Electronic document containing the information necessary to satisfy a given business process set of requirements.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="MarketDocument.Process">Process</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Process">Process</a>
+</p>
+</td>
+<td/>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">createdDateTime</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">dateTime</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.createdDateTime">Document</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">lastModifiedDateTime</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">dateTime</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.lastModifiedDateTime">Document</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">revisionNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.revisionNumber">Document</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">subject</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.subject">Document</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">title</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.title">Document</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">type</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.type">Document</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">docStatus</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Status">Status</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.docStatus">Document</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">electronicAddress</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ElectronicAddress">ElectronicAddress</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.electronicAddress">Document</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">status</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Status">Status</a>
+</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#Document.status">Document</a>
+</p>
+</td>
+</tr>
+</table>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="MeasurementPoint" class="group">
+<a href="#MeasurementPoint">
+<h2 class="concrete">MeasurementPoint</h2>
+</a>
+<p class="package">MarketManagement</p>
+<p class="comment">The location where one or more products are measured. This may be a physical or virtual location.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="MeasurementPoint.TimeSeries">TimeSeries</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#TimeSeries">TimeSeries</a>
+</p>
+</td>
+<td/>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Period" class="group">
+<a href="#Period">
+<h2 class="concrete">Period</h2>
+</a>
+<p class="package">MarketManagement</p>
+<p class="comment">An identification of a time interval contaning a set of time points with a given resolution.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Period.resolution">resolution</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Duration">Duration</a>
+</p>
+</td>
+<td>
+<p class="comment">The number of units of time that compose an individual step within a period.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Period.MarketDocument">MarketDocument</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#MarketDocument">MarketDocument</a>
+</p>
+</td>
+<td/>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Point" class="group">
+<a href="#Point">
+<h2 class="concrete">Point</h2>
+</a>
+<p class="package">MarketManagement</p>
+<p class="comment">An identification of a set of values beeing adressed within a specific interval of time.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Point.bidQuantity">bidQuantity</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">decimal</p>
+</td>
+<td>
+<p class="comment">The quantity provided in a tender.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Point.position">position</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">integer</p>
+</td>
+<td>
+<p class="comment">A sequential value representing the relative position within a given time interval.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Point.quantity">quantity</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">decimal</p>
+</td>
+<td>
+<p class="comment">The capacity or energy for a given time interval.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Point.Period">Period</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Period">Period</a>
+</p>
+</td>
+<td/>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="Process" class="group">
+<a href="#Process">
+<h2 class="concrete">Process</h2>
+</a>
+<p class="package">IES_Projects</p>
+<p class="comment">The formal specification of a set of business transactions having the same business goal.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Process.classificationType">classificationType</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The classification mechanism used to group a set of objects together within a business process. The grouping may be of a detailed or a summary nature.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Process.processType">processType</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The kind of business process.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Abstract Classes</h1>
+<div id="Document" class="group">
+<a href="#Document">
+<h2 class="abstract">Document</h2>
+</a>
+<p class="package">Common</p>
+<p class="comment">Parent class for different groupings of information collected and managed as a part of a business process. It will frequently contain references to other objects, such as assets, people and power system resources.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="Document.createdDateTime">createdDateTime</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">dateTime</p>
+</td>
+<td>
+<p class="comment">Date and time that this document was created.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Document.lastModifiedDateTime">lastModifiedDateTime</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">dateTime</p>
+</td>
+<td>
+<p class="comment">Date and time this document was last modified. Documents may potentially be modified many times during their lifetime.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Document.revisionNumber">revisionNumber</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Revision number for this document.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Document.subject">subject</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Document subject.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Document.title">title</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Document title.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Document.type">type</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Utility-specific classification of this document, according to their corporate standards, practices, and existing IT systems (e.g., for management of assets, maintenance, work, outage, customers, etc.).</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Document.docStatus">docStatus</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Status">Status</a>
+</p>
+</td>
+<td>
+<p class="comment">Status of this document. For status of subject matter this document represents (e.g., Agreement, Work), use 'status' attribute.</p>
+<p class="comment">Example values for 'docStatus.status' are draft, approved, cancelled, etc.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Document.electronicAddress">electronicAddress</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#ElectronicAddress">ElectronicAddress</a>
+</p>
+</td>
+<td>
+<p class="comment">Electronic address.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="Document.status">status</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Status">Status</a>
+</p>
+</td>
+<td>
+<p class="comment">Status of subject matter (e.g., Agreement, Work) this document represents. For status of the document itself, use 'docStatus' attribute.</p>
+</td>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="IdentifiedObject" class="group">
+<a href="#IdentifiedObject">
+<h2 class="abstract">IdentifiedObject</h2>
+</a>
+<p class="package">Core</p>
+<p class="comment">This is a root class to provide common identification for all classes needing identification and naming attributes.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.mRID">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Master resource identifier issued by a model authority. The mRID is globally unique within an exchange context.</p>
+<p class="comment">Global uniqeness is easily achived by using a UUID for the mRID. It is strongly recommended to do this.</p>
+<p class="comment">For CIMXML data files in RDF syntax, the mRID is mapped to rdf:ID or rdf:about attributes that identify CIM object elements.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.aliasName">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The aliasName is free text human readable name of the object alternative to IdentifiedObject.name. It may be non unique and may not correlate to a naming hierarchy.</p>
+<p class="comment">The attribute aliasName is retained because of backwards compatibility between CIM relases. It is however recommended to replace aliasName with the Name class as aliasName is planned for retirement at a future time.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="IdentifiedObject.name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The name is any free human readable and possibly non unique text naming the object.</p>
+</td>
+</tr>
+</table>
+</div>
+<div id="TimeSeries" class="group">
+<a href="#TimeSeries">
+<h2 class="abstract">TimeSeries</h2>
+</a>
+<p class="package">MarketManagement</p>
+<p class="comment">A set of regular time-ordered measurements or values of quantitative nature of an individual or collective phenomenon taken at successive, in most cases equidistant, periods / points of time.</p>
+<h3>Native Members</h3>
+<table>
+<tr>
+<th>
+<p class="name" id="TimeSeries.objectAggregation">objectAggregation</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Identification of the object that is the common dominator used to aggregate a time series.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TimeSeries.product">product</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">The type of the product such as Power, energy, reactive power, transport capacity that is the subject of the time series.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TimeSeries.version">version</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p class="comment">Version of the time series.</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name" id="TimeSeries.MarketDocument">MarketDocument</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#MarketDocument">MarketDocument</a>
+</p>
+</td>
+<td/>
+</tr>
+<tr>
+<th>
+<p class="name" id="TimeSeries.Period">Period</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">
+<a href="#Period">Period</a>
+</p>
+</td>
+<td/>
+</tr>
+</table>
+<h3>Inherited Members</h3>
+<table>
+<tr>
+<th>
+<p class="name">mRID</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.mRID">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">aliasName</p>
+</th>
+<td>
+<p class="cardinality">0..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.aliasName">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+<tr>
+<th>
+<p class="name">name</p>
+</th>
+<td>
+<p class="cardinality">1..1</p>
+</td>
+<td class="type">
+<p class="type">string</p>
+</td>
+<td>
+<p>see <a class="superclass" href="#IdentifiedObject.name">IdentifiedObject</a>
+</p>
+</td>
+</tr>
+</table>
+</div>
+<h1>Enumerations</h1>
+<h1>Compound Types</h1>
+<h1>Datatypes</h1>
+<div id="Duration" class="group">
+<a href="#Duration">
+<h2 class="domain">Duration</h2>
+</a>
+<p class="package"/>
+<p class="comment">Duration as "PnYnMnDTnHnMnS" which conforms to ISO 8601, where nY expresses a number of years, nM a number of months, nD a number of days. The letter T separates the date expression from the time expression and, after it, nH identifies a number of hours, nM a number of minutes and nS a number of seconds. The number of seconds could be expressed as a decimal number, but all other numbers are integers.</p>
+<p class="declaration">XSD type: <span class="xsdtype">string</span>
+</p>
+</div>
+</body>
+</html>

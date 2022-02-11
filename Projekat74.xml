@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+
+    <cim:Process rdf:ID="Process_1">
+		<cim:Process.classificationType>Process_ClassificationType</cim:Process.classificationType>
+		<cim:Process.processType>Process_Type</cim:Process.processType>
+		<cim:IdentifiedObject.aliasName>Process_AliasNAME</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Process_MRID</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Process_NAME</cim:IdentifiedObject.name>
+	</cim:Process>
+    
+	<cim:MarketDocument rdf:ID="MarketDocument_1">
+		<cim:MarketDocument.Process rdf:resource="#Process_1"/>
+		<cim:Document.createdDateTime>12-12-2022</cim:Document.createdDateTime>
+		<cim:Document.lastModifiedDateTime>12-12-2022</cim:Document.lastModifiedDateTime>
+		<cim:Document.revisionNumber>MarketDocument_RevisionNumber</cim:Document.revisionNumber>
+		<cim:Document.subject>MarketDocument_Subject</cim:Document.subject>
+		<cim:Document.title>MarketDocument_Title</cim:Document.title>
+		<cim:Document.type>MarketDocument_Type</cim:Document.type>
+		<cim:IdentifiedObject.aliasName>MarketDocument_AliasName</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>MarketDocument_MRID</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>MarketDocument_NAME</cim:IdentifiedObject.name>
+	</cim:MarketDocument>
+    
+    <cim:Period rdf:ID="Period_1">
+		<cim:Period.MarketDocument rdf:resource="#MarketDocument_1"/>
+		<cim:IdentifiedObject.aliasName>Period_AliasName</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Period_MRID</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Period_NAME</cim:IdentifiedObject.name>
+	</cim:Period>
+    
+	<cim:Point rdf:ID="Point_1">
+		<cim:Point.Period rdf:resource="#Period_1"/>
+		<cim:Point.position>2</cim:Point.position>
+		<cim:IdentifiedObject.aliasName>Point_AliasName</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>Point_Mrid</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Point_NAME</cim:IdentifiedObject.name>
+	</cim:Point>
+
+    <cim:BidTimeSeries rdf:ID="BidTimeSeries_1">
+		<cim:BidTimeSeries.blockBid>True</cim:BidTimeSeries.blockBid>
+		<cim:BidTimeSeries.direction>BidTimeSeries_Direction</cim:BidTimeSeries.direction>
+		<cim:BidTimeSeries.divisible>True</cim:BidTimeSeries.divisible>
+		<cim:BidTimeSeries.linkedBidsIdentification>BidTimeSeries_LinkedBidsIdentification</cim:BidTimeSeries.linkedBidsIdentification>
+		<!-- <cim:BidTimeSeries.minimumActivationQuantity>3.0</cim:BidTimeSeries.minimumActivationQuantity> -->
+		<!-- <cim:BidTimeSeries.stepIncrementQuantity>4.0</cim:BidTimeSeries.stepIncrementQuantity> -->
+		<cim:TimeSeries.MarketDocument rdf:resource="#MarketDocument_1"/>
+		<cim:TimeSeries.objectAggregation>BidTimeSeries_ObjectAggregation</cim:TimeSeries.objectAggregation>
+		<cim:TimeSeries.Period rdf:resource="#Period_1"/>
+		<cim:TimeSeries.product>BidTimeSeries_Product</cim:TimeSeries.product>
+		<cim:TimeSeries.version>BidTimeSeries_Version</cim:TimeSeries.version>
+		<cim:IdentifiedObject.aliasName>BidTimeSeries_AliasNAME</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>BidTimeSeries_MRID</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>BidTimeSeries_NAME</cim:IdentifiedObject.name>
+	</cim:BidTimeSeries>
+    
+    <cim:MeasurementPoint rdf:ID="MeasurementPoint_1">
+		<cim:MeasurementPoint.TimeSeries rdf:resource="#BidTimeSeries_1"/>
+		<cim:IdentifiedObject.aliasName>MeasurementPoint_AliasNAME</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>MeasurementPoint_MRID</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>MeasurementPoint_NAME</cim:IdentifiedObject.name>
+	</cim:MeasurementPoint>
+</rdf:RDF>

@@ -1,0 +1,124 @@
+8.2.2022. 23:13:35 : Network Model Service Test Client is up and running...
+8.2.2022. 23:13:35 : Result directory: ../Results
+8.2.2022. 23:14:47 : Entering entity id failed. Please use hex (0x) or decimal format.
+8.2.2022. 23:14:47 : GetValues failed. Input string was not in a correct format.
+8.2.2022. 23:15:08 : Entering entity id failed. Please use hex (0x) or decimal format.
+8.2.2022. 23:15:08 : GetValues failed. Input string was not in a correct format.
+8.2.2022. 23:15:13 : Getting values method started.
+8.2.2022. 23:15:13 : Failed to get model type code for DMS type: 0. Invalid DMS type
+8.2.2022. 23:15:13 : Getting values method for entered id = 1224979098644840448 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+8.2.2022. 23:15:24 : Getting values method started.
+8.2.2022. 23:15:24 : Failed to get model type code for DMS type: 0. Invalid DMS type
+8.2.2022. 23:15:24 : Getting values method for entered id = 1 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+8.2.2022. 23:15:37 : Entering entity id failed. Please use hex (0x) or decimal format.
+8.2.2022. 23:15:37 : GetValues failed. Input string was not in a correct format.
+8.2.2022. 23:15:42 : Getting values method started.
+8.2.2022. 23:15:42 : Failed to get model type code for DMS type: 0. Invalid DMS type
+8.2.2022. 23:15:42 : Getting values method for entered id = 1 failed.
+	Failed to get model type code for DMS type: 0. Invalid DMS type
+8.2.2022. 23:16:06 : Getting values method started.
+8.2.2022. 23:16:06 : Getting values method successfully finished.
+8.2.2022. 23:16:34 : Getting values method started.
+8.2.2022. 23:16:35 : Getting values method successfully finished.
+8.2.2022. 23:17:01 : Getting values method started.
+8.2.2022. 23:17:01 : Getting values method successfully finished.
+8.2.2022. 23:23:36 : Getting values method started.
+8.2.2022. 23:30:03 : Network Model Service Test Client is up and running...
+8.2.2022. 23:30:03 : Result directory: ../Results
+8.2.2022. 23:30:16 : Getting values method started.
+8.2.2022. 23:30:38 : Getting values method for entered id = 17179869186 failed.
+	Getting values for resource with ID = 0x0000000400000002 failed. Failed to get values for entity with GID = 0x0000000400000002. Unknown property id = POINT_BIDQUALITY for entity (GID = 0x0000000400000002).
+8.2.2022. 23:32:04 : Network Model Service Test Client is up and running...
+8.2.2022. 23:32:04 : Result directory: ../Results
+8.2.2022. 23:32:20 : Getting values method started.
+8.2.2022. 23:35:10 : Network Model Service Test Client is up and running...
+8.2.2022. 23:35:10 : Result directory: ../Results
+8.2.2022. 23:35:22 : Getting values method started.
+8.2.2022. 23:36:27 : Network Model Service Test Client is up and running...
+8.2.2022. 23:36:27 : Result directory: ../Results
+8.2.2022. 23:36:30 : Entering entity id failed. Please use hex (0x) or decimal format.
+8.2.2022. 23:36:30 : GetValues failed. Input string was not in a correct format.
+8.2.2022. 23:36:35 : Getting values method started.
+8.2.2022. 23:36:35 : Getting values method successfully finished.
+8.2.2022. 23:37:11 : Getting values method started.
+8.2.2022. 23:37:23 : Network Model Service Test Client is up and running...
+8.2.2022. 23:37:23 : Result directory: ../Results
+8.2.2022. 23:37:34 : Getting values method started.
+8.2.2022. 23:37:34 : Getting values method successfully finished.
+8.2.2022. 23:37:55 : Getting values method started.
+8.2.2022. 23:37:55 : Getting values method successfully finished.
+8.2.2022. 23:50:57 : Getting values method started.
+8.2.2022. 23:50:57 : Getting values method successfully finished.
+8.2.2022. 23:51:09 : Getting values method started.
+8.2.2022. 23:51:09 : Getting values method successfully finished.
+8.2.2022. 23:54:22 : Getting extent values method started.
+8.2.2022. 23:54:22 : Getting extent values method successfully finished.
+8.2.2022. 23:54:58 : Getting extent values method started.
+8.2.2022. 23:54:58 : Getting extent values method failed for 2.
+	Invalid Model Code: 2
+8.2.2022. 23:55:02 : Getting extent values method started.
+8.2.2022. 23:55:02 : Getting extent values method successfully finished.
+8.2.2022. 23:55:27 : Getting extent values method started.
+8.2.2022. 23:55:27 : Getting extent values method successfully finished.
+8.2.2022. 23:55:38 : Getting extent values method started.
+8.2.2022. 23:55:38 : Getting extent values method successfully finished.
+9.2.2022. 00:01:22 : Network Model Service Test Client is up and running...
+9.2.2022. 00:01:22 : Result directory: ../Results
+9.2.2022. 00:01:34 : Getting values method started.
+9.2.2022. 00:01:34 : Getting values method successfully finished.
+9.2.2022. 00:02:04 : Entering entity id failed. Please use hex (0x) or decimal format.
+9.2.2022. 00:02:04 : GetValues failed. Input string was not in a correct format.
+9.2.2022. 00:02:06 : Getting values method started.
+9.2.2022. 00:02:06 : Getting values method successfully finished.
+9.2.2022. 00:02:12 : Getting extent values method started.
+9.2.2022. 00:02:12 : Getting extent values method failed for 12884901891.
+	Invalid Model Code: 12884901891
+9.2.2022. 00:03:16 : Getting extent values method started.
+9.2.2022. 00:03:16 : Getting extent values method failed for 12884901892.
+	Invalid Model Code: 12884901892
+9.2.2022. 00:03:23 : Getting extent values method started.
+9.2.2022. 00:03:23 : Getting extent values method failed for 12884901892.
+	Invalid Model Code: 12884901892
+9.2.2022. 00:03:31 : Getting extent values method started.
+9.2.2022. 00:03:31 : Getting extent values method failed for 12884901892.
+	Invalid Model Code: 12884901892
+9.2.2022. 00:03:44 : Getting extent values method started.
+9.2.2022. 00:03:44 : Getting extent values method failed for 12884901892.
+	Invalid Model Code: 12884901892
+9.2.2022. 00:04:52 : Getting extent values method started.
+9.2.2022. 00:04:52 : Getting extent values method successfully finished.
+9.2.2022. 00:05:44 : Getting extent values method started.
+9.2.2022. 00:05:44 : Getting extent values method successfully finished.
+9.2.2022. 00:07:13 : Network Model Service Test Client is up and running...
+9.2.2022. 00:07:13 : Result directory: ../Results
+9.2.2022. 00:07:40 : Getting extent values method started.
+9.2.2022. 00:07:41 : Getting extent values method successfully finished.
+9.2.2022. 00:08:13 : Getting extent values method started.
+9.2.2022. 00:08:13 : Getting extent values method successfully finished.
+9.2.2022. 00:08:25 : Getting extent values method started.
+9.2.2022. 00:08:25 : Getting extent values method successfully finished.
+9.2.2022. 00:08:51 : Getting extent values method started.
+9.2.2022. 00:08:51 : Getting extent values method successfully finished.
+9.2.2022. 00:09:22 : Getting extent values method started.
+9.2.2022. 00:09:22 : Getting extent values method successfully finished.
+9.2.2022. 00:09:33 : Getting extent values method started.
+9.2.2022. 00:09:33 : Getting extent values method successfully finished.
+9.2.2022. 00:09:48 : Getting extent values method started.
+9.2.2022. 00:09:48 : Getting extent values method successfully finished.
+9.2.2022. 00:10:23 : Getting extent values method started.
+9.2.2022. 00:10:23 : Getting extent values method successfully finished.
+9.2.2022. 00:14:52 : Getting related values method started.
+9.2.2022. 00:14:52 : Getting related values method successfully finished.
+10.2.2022. 20:27:52 : Network Model Service Test Client is up and running...
+10.2.2022. 20:27:52 : Result directory: ../Results
+10.2.2022. 20:51:23 : Network Model Service Test Client is up and running...
+10.2.2022. 20:51:23 : Result directory: ../Results
+10.2.2022. 20:51:25 : Getting processes values method started.
+10.2.2022. 21:02:37 : Network Model Service Test Client is up and running...
+10.2.2022. 21:02:37 : Result directory: ../Results
+10.2.2022. 21:02:39 : Getting Market document with lowest gid method started.
+11.2.2022. 16:27:25 : Network Model Service Test Client is up and running...
+11.2.2022. 16:27:26 : Result directory: ../Results
+11.2.2022. 16:27:28 : Getting Market document with lowest gid method started.

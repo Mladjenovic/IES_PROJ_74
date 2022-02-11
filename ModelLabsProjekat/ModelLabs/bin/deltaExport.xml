@@ -1,0 +1,78 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="6">
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="PROCESS" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Process_MRID" />
+            <Property id="IDOBJ_NAME" value="Process_NAME" />
+            <Property id="IDOBJ_ALIASNAME" value="Process_AliasNAME" />
+            <Property id="PROCESS_CLASIFICATIONTYPE" value="Process_ClassificationType" />
+            <Property id="PROCESS_PROCESSTYPE" value="Process_Type" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="MARKETDOCUMENT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="MarketDocument_MRID" />
+            <Property id="IDOBJ_NAME" value="MarketDocument_NAME" />
+            <Property id="IDOBJ_ALIASNAME" value="MarketDocument_AliasName" />
+            <Property id="DOCUMENT_CREATEDDATETIME" value="638064000000000000" />
+            <Property id="DOCUMENT_LASTMODIFIEDDATETIME" value="638064000000000000" />
+            <Property id="DOCUMENT_REVISIONNUMBER" value="MarketDocument_RevisionNumber" />
+            <Property id="DOCUMENT_SUBJECT" value="MarketDocument_Subject" />
+            <Property id="DOCUMENT_TITLE" value="MarketDocument_Title" />
+            <Property id="DOCUMENT_TYPE" value="MarketDocument_Type" />
+            <Property id="MARKETDOCUMENT_PROCESS" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="PERIOD" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Period_MRID" />
+            <Property id="IDOBJ_NAME" value="Period_NAME" />
+            <Property id="IDOBJ_ALIASNAME" value="Period_AliasName" />
+            <Property id="PERIOD_MARKETDOCUMENT" value="0x00000002ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="POINT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="Point_Mrid" />
+            <Property id="IDOBJ_NAME" value="Point_NAME" />
+            <Property id="IDOBJ_ALIASNAME" value="Point_AliasName" />
+            <Property id="POINT_POSITION" value="2" />
+            <Property id="POINT_PERIOD" value="0x00000003ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="BIDTIMESERIES" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="BidTimeSeries_MRID" />
+            <Property id="IDOBJ_NAME" value="BidTimeSeries_NAME" />
+            <Property id="IDOBJ_ALIASNAME" value="BidTimeSeries_AliasNAME" />
+            <Property id="TIMESERIES_OBJECTAGGREGATION" value="BidTimeSeries_ObjectAggregation" />
+            <Property id="TIMESERIES_PRODUCT" value="BidTimeSeries_Product" />
+            <Property id="TIMESERIES_VERSION" value="BidTimeSeries_Version" />
+            <Property id="TIMESERIES_MARKETDOCUMENT" value="0x00000002ffffffff" />
+            <Property id="TIMESERIES_PERIOD" value="0x00000003ffffffff" />
+            <Property id="BIDTIMESERIES_BLOCKBID" value="1" />
+            <Property id="BIDTIMESERIES_DIRECTION" value="BidTimeSeries_Direction" />
+            <Property id="BIDTIMESERIES_DIVISIBLE" value="1" />
+            <Property id="BIDTIMESERIES_LINKEDBIDSIDENTIFICATION" value="BidTimeSeries_LinkedBidsIdentification" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006ffffffff" type="MEASUREMENTPOINT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="MeasurementPoint_MRID" />
+            <Property id="IDOBJ_NAME" value="MeasurementPoint_NAME" />
+            <Property id="IDOBJ_ALIASNAME" value="MeasurementPoint_AliasNAME" />
+            <Property id="MEASUREMENTPOINT_TIMESERIES" value="0x00000005ffffffff" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>
